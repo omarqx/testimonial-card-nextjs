@@ -12,7 +12,7 @@ const noto_sans = Noto_Sans({
 // Card component for testimonials
 const Card = () => {
   return (
-    <article className="bg-white p-6 rounded-lg shadow-md col-span-4 row-start-2 md:col-start-2 lg:col-start-5 h-fit">
+    <article className="bg-white p-6 rounded-lg shadow-md col-span-4 row-start-2 md:col-start-2 lg:col-start-5 h-fit w-[340px]">
       <header className="flex items-center mb-4">
         <figure className="w-12 h-12 mr-4">
           <Image
@@ -29,7 +29,7 @@ const Card = () => {
         </div>
       </header>
       <section>
-        <p className="text-neutral-600 text-base testimonial">
+        <p className="text-neutral-600 text-base">
           I&apos;ve been searching for high-quality abstract images for my design projects,
           and I&apos;m thrilled to have found this platform. The variety and depth of creativity are astounding!
         </p>
