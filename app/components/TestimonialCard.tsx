@@ -1,17 +1,17 @@
 import Image from "next/image";
 
 interface ITestimonialCardProps {
-  author: string; 
-  handle: string; 
-  testimonial: string; 
-  imageSrc: string; 
+  author: string;
+  handle: string;
+  testimonial: string;
+  imageSrc: string;
   imageAlt: string;
 }
 
 
 const TestimonialCard = ({ author, handle, testimonial, imageSrc, imageAlt }: ITestimonialCardProps) => {
   return (
-    <article className="bg-white p-6 rounded-lg shadow-md col-span-4 row-start-2 md:col-start-2 lg:col-start-5 h-fit w-[340px]">
+    <article className="bg-white rounded-lg shadow-md p-6 h-fit w-[340px]">
       <header className="flex items-center mb-4">
         <figure className="w-12 h-12 mr-4">
           <Image
