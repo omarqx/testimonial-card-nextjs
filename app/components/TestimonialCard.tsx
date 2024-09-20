@@ -11,7 +11,7 @@ interface ITestimonialCardProps {
 
 const TestimonialCard = ({ author, handle, testimonial, imageSrc, imageAlt }: ITestimonialCardProps) => {
   return (
-    <article className="bg-white rounded-lg shadow-md p-6 h-fit w-[340px]">
+    <article className="bg-white rounded-lg shadow-custom p-6 h-fit w-[340px]">
       <header className="flex items-center mb-4">
         <figure className="w-12 h-12 mr-4">
           <Image
