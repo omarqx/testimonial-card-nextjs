@@ -10,20 +10,20 @@ interface ITestimonialCardProps {
 
 const TestimonialCard = ({ author, handle, testimonial, imageSrc, imageAlt }: ITestimonialCardProps) => {
   return (
-    <article className="bg-white rounded-lg shadow-custom p-6 h-fit w-[340px]">
-      <header className="flex items-center mb-4">
-        <figure className="w-12 h-12 mr-4 flex-shrink-0">
+    <article className="bg-white rounded-lg shadow-custom p-6 w-[340px]">
+      <header className="items-center mb-4 h-[49px] justify-center items-center inline-flex">
+        <figure className="w-12 h-12 mr-4 justify-center items-center inline-flex">
           <Image
             src={"/images" + imageSrc}
             alt={imageAlt}
-            className="rounded-full"
+            className="w-12 h-12 rounded-[48px]"
             width={48}
             height={48}
           />
         </figure>
-        <div className="overflow-hidden">
-          <h2 className="text-neutral-900 text-lg font-semibold truncate max-w-full">{author}</h2>
-          <p className="text-neutral-600 text-sm">{handle}</p>
+        <div className="grow shrink basis-0 flex-col justify-start items-start gap-px inline-flex overflow-hidden">
+          <h2 className="self-stretch text-neutral-900 leading-7 text-lg font-semibold truncate max-w-full">{author}</h2>
+          <p className="self-stretch text-neutral-600 leading-tight font-normal text-sm">{handle}</p>
         </div>
       </header>
       <section>
